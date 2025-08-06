@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produto - Emotional Care</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Produto em Destaque</h1>
+    </header>
+
+    <main class="form-section">
+      <h2>IA Emotional Care</h2>
+      <p>inclui Aplicativo Emotional Care AI, Relógio Emotional Capture.</p>
+      <h3>R$ 159,90</h3>
+      <button class="glow-button" onclick="finalizarCompra()">Finalizar Compra</button>
+      <p id="mensagem-carrinho" style="margin-top: 20px;"></p>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Emotional Care</p>
+    </footer>
+  </div>
+
+  <script>
+    function adicionarCarrinho() {
+      const msg = document.getElementById("mensagem-carrinho");
+      msg.textContent = "Produto adicionado ao carrinho com sucesso! 🛒";
+    }
+  </script>
+</body>
+</html>
+
+
+<script>
+  function finalizarCompra() {
+    window.location.href = "./compra.html";
+  }
+</script>
